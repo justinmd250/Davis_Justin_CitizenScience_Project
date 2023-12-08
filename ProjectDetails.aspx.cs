@@ -25,6 +25,7 @@ namespace Davis_Justin_CitizenScience_Project
                 }
                 else
                 {
+                    Session["ProjectID"] = projectID;
                     LoadProjectDetails(projectID);
                 }
             }
@@ -53,7 +54,7 @@ namespace Davis_Justin_CitizenScience_Project
             }
         }
 
-
+        //Runs a query that pulls the proper projectid that correlates to the projectid selected from the RA page and then displays all the information in the project table that correlates to said projectid
     }
 
 }

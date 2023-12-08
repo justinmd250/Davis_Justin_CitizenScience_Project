@@ -7,7 +7,7 @@
               
                 <a href="Projects.aspx?id=<%# Eval("ProjectID") %>">
                   
-                    
+                    <!--- Creates a clickable link that links the name of the RA given in the project table to the proper researcharea--->
                 </a>
            
             </ItemTemplate>

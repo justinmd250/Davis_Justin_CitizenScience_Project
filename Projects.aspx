@@ -10,7 +10,7 @@
                 <%#Eval("Name") %>
                 </a>
                 <br />
-                
+                <!--Matches the information displayed in projectdetails based on the projectid given.-->
             </ItemTemplate>
         </asp:Repeater>
     </main>

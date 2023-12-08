@@ -1,4 +1,4 @@
-﻿
+﻿   
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -34,7 +34,7 @@ namespace Davis_Justin_CitizenScience_Project
                     }
                 }
             }
-
+            // If an institutionID is given, the first cmd is ran and only values that match the institutionID are shown. If none is given, the second cmd is ran and all researchareas are shown.
 
 
             return dt;
@@ -62,5 +62,5 @@ namespace Davis_Justin_CitizenScience_Project
                 }
             }
         }
-    }
+    }// If instid is not given, then the select* from researchareas is ran and if it is given, the getresearchbyinstitutions stored proceudre is ran.
 }

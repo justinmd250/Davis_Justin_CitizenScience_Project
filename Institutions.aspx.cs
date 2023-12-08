@@ -12,7 +12,7 @@ namespace Davis_Justin_CitizenScience_Project
 {
     public partial class Institutions : System.Web.UI.Page
     {
-
+        
         public DataTable GetDataFromDataBase()
         {
             DataTable dt = new DataTable();
@@ -20,6 +20,7 @@ namespace Davis_Justin_CitizenScience_Project
             string idvalue = Request.QueryString["InstitutionID"]; 
             using (SqlConnection conn = new SqlConnection(connString))
             {
+                //Opens a connection to the database and executes stored proecudre spGetAllInstitutions
                 conn.Open();
                 string query = "EXEC spGetAllInstitutions  @InstID";
                 using (SqlCommand cmd = new SqlCommand(query, conn))

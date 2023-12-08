@@ -17,7 +17,7 @@ namespace Davis_Justin_CitizenScience_Project
             DataTable dt = new DataTable();
             string connString = ConfigurationManager.ConnectionStrings["CitizenScienceDB"].ToString();
             string idValue = Request.QueryString["RA"];
-
+            //Sets the RA idvalue that will be used later in an aspx to match the researchID to the project that corresponds
             if (!string.IsNullOrEmpty(idValue))
             {
                 using (SqlConnection conn = new SqlConnection(connString))
@@ -35,7 +35,7 @@ namespace Davis_Justin_CitizenScience_Project
                     }
                 }
 
-
+                //Executes the stored procedure and adds values to the datatable where the RA matches the researchid
             }
             return dt;
         }
@@ -59,7 +59,7 @@ namespace Davis_Justin_CitizenScience_Project
             }
         }
 
-
+        //IF not researchid is given, it redirects to the base researchareas page and if one is given it spits out the proper projectname for the data.
 
     }
 }
