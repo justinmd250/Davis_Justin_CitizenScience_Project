@@ -11,7 +11,7 @@
                 <%#Eval("InstitutionName") %>
                 
               
-               
+                 <!--This calls on the researchareas page and pulls the instID to match the institutionID from the institutions table. This allows for you to click on the link for institutions and only get results for researchareas that match the institutionid--->
                 </a>
                 <br />
                 
